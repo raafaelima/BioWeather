@@ -16,6 +16,7 @@
 		56648276296870A0001E60BD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56648275296870A0001E60BD /* LocationManager.swift */; };
 		5664828229688371001E60BD /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828129688371001E60BD /* AuthenticationView.swift */; };
 		5664828929689C66001E60BD /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828829689C66001E60BD /* Color+Custom.swift */; };
+		5664828B2968A9D0001E60BD /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828A2968A9D0001E60BD /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5664827929687ABF001E60BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5664828129688371001E60BD /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		5664828829689C66001E60BD /* Color+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
+		5664828A2968A9D0001E60BD /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				5664828129688371001E60BD /* AuthenticationView.swift */,
+				5664828A2968A9D0001E60BD /* AuthenticationViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5664828B2968A9D0001E60BD /* AuthenticationViewModel.swift in Sources */,
 				5664828929689C66001E60BD /* Color+Custom.swift in Sources */,
 				5664824D29686F14001E60BD /* ContentView.swift in Sources */,
 				5664824B29686F14001E60BD /* BioWeatherApp.swift in Sources */,

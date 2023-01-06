@@ -11,6 +11,7 @@ import LocalAuthentication
 struct AuthenticationView: View {
 
     @State var userName = ""
+    @StateObject private var viewModel = AuthenticationViewModel()
 
     var body: some View {
         ZStack {
@@ -51,7 +52,7 @@ struct AuthenticationView: View {
     }
 
     private func findMyWeatherInfo() -> some View {
-        Button(action: {}, label: {
+        Button(action: viewModel.authenticateUser, label: {
             Text("Find My Weather Info")
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 6)
