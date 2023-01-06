@@ -13,6 +13,7 @@
 		5664825C29686F15001E60BD /* BioWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664825B29686F15001E60BD /* BioWeatherTests.swift */; };
 		5664826629686F16001E60BD /* BioWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664826529686F16001E60BD /* BioWeatherUITests.swift */; };
 		5664826829686F16001E60BD /* BioWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664826729686F16001E60BD /* BioWeatherUITestsLaunchTests.swift */; };
+		56648276296870A0001E60BD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56648275296870A0001E60BD /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		5664826129686F16001E60BD /* BioWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BioWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5664826529686F16001E60BD /* BioWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherUITests.swift; sourceTree = "<group>"; };
 		5664826729686F16001E60BD /* BioWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		56648275296870A0001E60BD /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5664827929687ABF001E60BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 				5664824A29686F14001E60BD /* BioWeatherApp.swift */,
 				5664824C29686F14001E60BD /* ContentView.swift */,
 				5664824E29686F15001E60BD /* Assets.xcassets */,
+				5664827429687093001E60BD /* Location */,
 			);
 			path = BioWeather;
 			sourceTree = "<group>";
@@ -114,6 +118,14 @@
 				5664826729686F16001E60BD /* BioWeatherUITestsLaunchTests.swift */,
 			);
 			path = BioWeatherUITests;
+			sourceTree = "<group>";
+		};
+		5664827429687093001E60BD /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				56648275296870A0001E60BD /* LocationManager.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +259,7 @@
 			files = (
 				5664824D29686F14001E60BD /* ContentView.swift in Sources */,
 				5664824B29686F14001E60BD /* BioWeatherApp.swift in Sources */,
+				56648276296870A0001E60BD /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,11 +421,14 @@
 				DEVELOPMENT_TEAM = KU682TTQW4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = BioWeather/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The location is needed to access the weather at the current location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The location is needed to access the weather at the current location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,11 +453,14 @@
 				DEVELOPMENT_TEAM = KU682TTQW4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = BioWeather/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The location is needed to access the weather at the current location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The location is needed to access the weather at the current location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
