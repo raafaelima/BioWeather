@@ -44,7 +44,7 @@
 		5664826529686F16001E60BD /* BioWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherUITests.swift; sourceTree = "<group>"; };
 		5664826729686F16001E60BD /* BioWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		56648275296870A0001E60BD /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		5664827929687ABF001E60BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5664827929687ABF001E60BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +95,9 @@
 		5664824929686F14001E60BD /* BioWeather */ = {
 			isa = PBXGroup;
 			children = (
-				5664824A29686F14001E60BD /* BioWeatherApp.swift */,
-				5664824C29686F14001E60BD /* ContentView.swift */,
 				5664824E29686F15001E60BD /* Assets.xcassets */,
+				5664827A29688038001E60BD /* Configurations */,
+				566482772968788A001E60BD /* Core */,
 				5664827429687093001E60BD /* Location */,
 			);
 			path = BioWeather;
@@ -126,6 +126,23 @@
 				56648275296870A0001E60BD /* LocationManager.swift */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		566482772968788A001E60BD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5664824A29686F14001E60BD /* BioWeatherApp.swift */,
+				5664824C29686F14001E60BD /* ContentView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5664827A29688038001E60BD /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				5664827929687ABF001E60BD /* Info.plist */,
+			);
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,7 +438,7 @@
 				DEVELOPMENT_TEAM = KU682TTQW4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BioWeather/Info.plist;
+				INFOPLIST_FILE = BioWeather/Configurations/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The location is needed to access the weather at the current location";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The location is needed to access the weather at the current location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -453,7 +470,7 @@
 				DEVELOPMENT_TEAM = KU682TTQW4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BioWeather/Info.plist;
+				INFOPLIST_FILE = BioWeather/Configurations/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The location is needed to access the weather at the current location";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The location is needed to access the weather at the current location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
