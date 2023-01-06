@@ -14,6 +14,8 @@
 		5664826629686F16001E60BD /* BioWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664826529686F16001E60BD /* BioWeatherUITests.swift */; };
 		5664826829686F16001E60BD /* BioWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664826729686F16001E60BD /* BioWeatherUITestsLaunchTests.swift */; };
 		56648276296870A0001E60BD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56648275296870A0001E60BD /* LocationManager.swift */; };
+		5664828229688371001E60BD /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828129688371001E60BD /* AuthenticationView.swift */; };
+		5664828929689C66001E60BD /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828829689C66001E60BD /* Color+Custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		5664826729686F16001E60BD /* BioWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		56648275296870A0001E60BD /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5664827929687ABF001E60BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5664828129688371001E60BD /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		5664828829689C66001E60BD /* Color+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				5664824E29686F15001E60BD /* Assets.xcassets */,
+				5664828029688356001E60BD /* Authentication */,
 				5664827A29688038001E60BD /* Configurations */,
 				566482772968788A001E60BD /* Core */,
+				5664828729689C56001E60BD /* Extensions */,
 				5664827429687093001E60BD /* Location */,
 			);
 			path = BioWeather;
@@ -143,6 +149,22 @@
 				5664827929687ABF001E60BD /* Info.plist */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		5664828029688356001E60BD /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5664828129688371001E60BD /* AuthenticationView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		5664828729689C56001E60BD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5664828829689C66001E60BD /* Color+Custom.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,8 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5664828929689C66001E60BD /* Color+Custom.swift in Sources */,
 				5664824D29686F14001E60BD /* ContentView.swift in Sources */,
 				5664824B29686F14001E60BD /* BioWeatherApp.swift in Sources */,
+				5664828229688371001E60BD /* AuthenticationView.swift in Sources */,
 				56648276296870A0001E60BD /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
