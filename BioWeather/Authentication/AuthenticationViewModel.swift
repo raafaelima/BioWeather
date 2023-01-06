@@ -32,7 +32,9 @@ class AuthenticationViewModel: ObservableObject {
                 toogleAuthStatus()
             } catch {
                 print(error.localizedDescription)
-                self.isAuthenticated = false
+                DispatchQueue.main.async {
+                    self.isAuthenticated = false
+                }
             }
         }
     }

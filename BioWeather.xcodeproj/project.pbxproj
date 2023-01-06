@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5664824B29686F14001E60BD /* BioWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664824A29686F14001E60BD /* BioWeatherApp.swift */; };
-		5664824D29686F14001E60BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664824C29686F14001E60BD /* ContentView.swift */; };
 		5664824F29686F15001E60BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5664824E29686F15001E60BD /* Assets.xcassets */; };
 		5664825C29686F15001E60BD /* BioWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664825B29686F15001E60BD /* BioWeatherTests.swift */; };
 		5664826629686F16001E60BD /* BioWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664826529686F16001E60BD /* BioWeatherUITests.swift */; };
@@ -17,6 +16,7 @@
 		5664828229688371001E60BD /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828129688371001E60BD /* AuthenticationView.swift */; };
 		5664828929689C66001E60BD /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828829689C66001E60BD /* Color+Custom.swift */; };
 		5664828B2968A9D0001E60BD /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828A2968A9D0001E60BD /* AuthenticationViewModel.swift */; };
+		5664828E2968AA5F001E60BD /* WeatherInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828D2968AA5F001E60BD /* WeatherInformationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 /* Begin PBXFileReference section */
 		5664824729686F14001E60BD /* BioWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BioWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5664824A29686F14001E60BD /* BioWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherApp.swift; sourceTree = "<group>"; };
-		5664824C29686F14001E60BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5664824E29686F15001E60BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5664825729686F15001E60BD /* BioWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BioWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5664825B29686F15001E60BD /* BioWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherTests.swift; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		5664828129688371001E60BD /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		5664828829689C66001E60BD /* Color+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
 		5664828A2968A9D0001E60BD /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		5664828D2968AA5F001E60BD /* WeatherInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInformationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +107,7 @@
 				566482772968788A001E60BD /* Core */,
 				5664828729689C56001E60BD /* Extensions */,
 				5664827429687093001E60BD /* Location */,
+				5664828C2968AA3F001E60BD /* WeatherInformation */,
 			);
 			path = BioWeather;
 			sourceTree = "<group>";
@@ -140,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				5664824A29686F14001E60BD /* BioWeatherApp.swift */,
-				5664824C29686F14001E60BD /* ContentView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -168,6 +168,14 @@
 				5664828829689C66001E60BD /* Color+Custom.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5664828C2968AA3F001E60BD /* WeatherInformation */ = {
+			isa = PBXGroup;
+			children = (
+				5664828D2968AA5F001E60BD /* WeatherInformationView.swift */,
+			);
+			path = WeatherInformation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,8 +309,8 @@
 			files = (
 				5664828B2968A9D0001E60BD /* AuthenticationViewModel.swift in Sources */,
 				5664828929689C66001E60BD /* Color+Custom.swift in Sources */,
-				5664824D29686F14001E60BD /* ContentView.swift in Sources */,
 				5664824B29686F14001E60BD /* BioWeatherApp.swift in Sources */,
+				5664828E2968AA5F001E60BD /* WeatherInformationView.swift in Sources */,
 				5664828229688371001E60BD /* AuthenticationView.swift in Sources */,
 				56648276296870A0001E60BD /* LocationManager.swift in Sources */,
 			);
