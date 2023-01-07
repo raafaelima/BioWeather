@@ -18,6 +18,7 @@
 		568E08782969ED4E00BD5FA5 /* AppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08772969ED4E00BD5FA5 /* AppLauncher.swift */; };
 		568E087A2969EE8900BD5FA5 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08792969EE8900BD5FA5 /* AppConfiguration.swift */; };
 		568E087F2969F02D00BD5FA5 /* AppConfigurationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E087E2969F02D00BD5FA5 /* AppConfigurationTest.swift */; };
+		568E08852969F24800BD5FA5 /* LocaleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08842969F24800BD5FA5 /* LocaleProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		568E08792969EE8900BD5FA5 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		568E087B2969EF3500BD5FA5 /* Local.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Local.plist; sourceTree = "<group>"; };
 		568E087E2969F02D00BD5FA5 /* AppConfigurationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurationTest.swift; sourceTree = "<group>"; };
+		568E08842969F24800BD5FA5 /* LocaleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				5664827929687ABF001E60BD /* Info.plist */,
 				568E087B2969EF3500BD5FA5 /* Local.plist */,
 				568E08792969EE8900BD5FA5 /* AppConfiguration.swift */,
+				568E08842969F24800BD5FA5 /* LocaleProvider.swift */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				568E08762969ED3700BD5FA5 /* BioWeatherTestApp.swift in Sources */,
 				5664828B2968A9D0001E60BD /* AuthenticationViewModel.swift in Sources */,
 				5664828929689C66001E60BD /* Color+Custom.swift in Sources */,
+				568E08852969F24800BD5FA5 /* LocaleProvider.swift in Sources */,
 				5664824B29686F14001E60BD /* BioWeatherApp.swift in Sources */,
 				5664828E2968AA5F001E60BD /* WeatherInformationView.swift in Sources */,
 				5664828229688371001E60BD /* AuthenticationView.swift in Sources */,
