@@ -10,6 +10,8 @@ import Foundation
 struct CurrentWeather {
     let location: Location
     let weather: Weather
+
+    static let noData = CurrentWeather(location: Location.noData, weather: Weather.noData)
 }
 
 extension CurrentWeather: Codable {
