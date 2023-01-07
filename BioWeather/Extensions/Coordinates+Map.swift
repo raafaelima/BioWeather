@@ -9,7 +9,11 @@ import Foundation
 import MapKit
 
 extension Coordinates {
-    func from(mapCoordinates: CLLocationCoordinate2D) -> Self {
-        return Self(latitude: mapCoordinates.latitude, longitude: mapCoordinates.longitude)
+    static func from(_ mapCoordinates: CLLocation?) -> Self {
+        if let mapCoordinates {
+            return Self(latitude: mapCoordinates.coordinate.latitude, longitude: mapCoordinates.coordinate.longitude)
+        } else {
+            return Self(latitude: 0, longitude: 0)
+        }
     }
 }

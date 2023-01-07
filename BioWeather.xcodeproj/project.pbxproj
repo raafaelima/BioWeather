@@ -13,7 +13,7 @@
 		5664828229688371001E60BD /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828129688371001E60BD /* AuthenticationView.swift */; };
 		5664828929689C66001E60BD /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828829689C66001E60BD /* Color+Custom.swift */; };
 		5664828B2968A9D0001E60BD /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828A2968A9D0001E60BD /* AuthenticationViewModel.swift */; };
-		5664828E2968AA5F001E60BD /* WeatherInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828D2968AA5F001E60BD /* WeatherInformationView.swift */; };
+		5664828E2968AA5F001E60BD /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828D2968AA5F001E60BD /* CurrentWeatherView.swift */; };
 		568E08762969ED3700BD5FA5 /* BioWeatherTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08752969ED3700BD5FA5 /* BioWeatherTestApp.swift */; };
 		568E08782969ED4E00BD5FA5 /* AppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08772969ED4E00BD5FA5 /* AppLauncher.swift */; };
 		568E087A2969EE8900BD5FA5 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08792969EE8900BD5FA5 /* AppConfiguration.swift */; };
@@ -54,6 +54,7 @@
 		568E08E8296A0B2E00BD5FA5 /* WeatherServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08E7296A0B2E00BD5FA5 /* WeatherServiceTest.swift */; };
 		568E08EB296A0B5A00BD5FA5 /* JsonDataParserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08EA296A0B5A00BD5FA5 /* JsonDataParserMock.swift */; };
 		568E08ED296A0BA400BD5FA5 /* URLSessionNetworkProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08EC296A0BA400BD5FA5 /* URLSessionNetworkProviderMock.swift */; };
+		568E08F0296A0FF300BD5FA5 /* CurrentWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08EF296A0FF300BD5FA5 /* CurrentWeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +77,7 @@
 		5664828129688371001E60BD /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		5664828829689C66001E60BD /* Color+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
 		5664828A2968A9D0001E60BD /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
-		5664828D2968AA5F001E60BD /* WeatherInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInformationView.swift; sourceTree = "<group>"; };
+		5664828D2968AA5F001E60BD /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
 		568E08752969ED3700BD5FA5 /* BioWeatherTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherTestApp.swift; sourceTree = "<group>"; };
 		568E08772969ED4E00BD5FA5 /* AppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLauncher.swift; sourceTree = "<group>"; };
 		568E08792969EE8900BD5FA5 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 		568E08E7296A0B2E00BD5FA5 /* WeatherServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceTest.swift; sourceTree = "<group>"; };
 		568E08EA296A0B5A00BD5FA5 /* JsonDataParserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDataParserMock.swift; sourceTree = "<group>"; };
 		568E08EC296A0BA400BD5FA5 /* URLSessionNetworkProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkProviderMock.swift; sourceTree = "<group>"; };
+		568E08EF296A0FF300BD5FA5 /* CurrentWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				5664824E29686F15001E60BD /* Assets.xcassets */,
-				5664828029688356001E60BD /* Authentication */,
 				5664827A29688038001E60BD /* Configurations */,
 				566482772968788A001E60BD /* Core */,
 				5664828729689C56001E60BD /* Extensions */,
@@ -168,7 +169,7 @@
 				568E08AF2969F7BA00BD5FA5 /* Model */,
 				568E08862969F32900BD5FA5 /* Network */,
 				568E08DE296A08D100BD5FA5 /* Service */,
-				5664828C2968AA3F001E60BD /* WeatherInformation */,
+				568E08EE296A0FA100BD5FA5 /* View */,
 			);
 			path = BioWeather;
 			sourceTree = "<group>";
@@ -233,12 +234,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		5664828C2968AA3F001E60BD /* WeatherInformation */ = {
+		5664828C2968AA3F001E60BD /* CurrentWeather */ = {
 			isa = PBXGroup;
 			children = (
-				5664828D2968AA5F001E60BD /* WeatherInformationView.swift */,
+				5664828D2968AA5F001E60BD /* CurrentWeatherView.swift */,
+				568E08EF296A0FF300BD5FA5 /* CurrentWeatherViewModel.swift */,
 			);
-			path = WeatherInformation;
+			path = CurrentWeather;
 			sourceTree = "<group>";
 		};
 		568E087D2969F02100BD5FA5 /* Configurations */ = {
@@ -451,6 +453,15 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
+		568E08EE296A0FA100BD5FA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5664828029688356001E60BD /* Authentication */,
+				5664828C2968AA3F001E60BD /* CurrentWeather */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -562,6 +573,7 @@
 				5664828B2968A9D0001E60BD /* AuthenticationViewModel.swift in Sources */,
 				568E08BC2969FAA800BD5FA5 /* JsonDataParser.swift in Sources */,
 				5664828929689C66001E60BD /* Color+Custom.swift in Sources */,
+				568E08F0296A0FF300BD5FA5 /* CurrentWeatherViewModel.swift in Sources */,
 				568E08D2296A02DF00BD5FA5 /* CurrentWeather.swift in Sources */,
 				568E08942969F32900BD5FA5 /* URLBuilder.swift in Sources */,
 				568E08B72969FA3400BD5FA5 /* Service.swift in Sources */,
@@ -572,7 +584,7 @@
 				568E08C32969FB8E00BD5FA5 /* Weather.swift in Sources */,
 				568E08932969F32900BD5FA5 /* URLSessionNetworkProvider.swift in Sources */,
 				568E08B32969F85400BD5FA5 /* Coordinates+Map.swift in Sources */,
-				5664828E2968AA5F001E60BD /* WeatherInformationView.swift in Sources */,
+				5664828E2968AA5F001E60BD /* CurrentWeatherView.swift in Sources */,
 				568E08E1296A08E800BD5FA5 /* WeatherService.swift in Sources */,
 				568E08B12969F7C200BD5FA5 /* Coordinates.swift in Sources */,
 				568E08922969F32900BD5FA5 /* NetworkProvider.swift in Sources */,

@@ -16,7 +16,7 @@ struct BioWeatherApp: App {
         WindowGroup {
             NavigationView {
                 if isAuthenticated {
-                    WeatherInformationView()
+                    CurrentWeatherView()
                 } else {
                     AuthenticationView()
                 }
