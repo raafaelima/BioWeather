@@ -15,11 +15,12 @@ struct AuthenticationView: View {
 
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.gradientStart, .gradientEnd], startPoint: .top, endPoint: .bottom)
-                .ignoresSafeArea()
+            Color.gray
+                .opacity(0.2)
+                .ignoresSafeArea(.all, edges: .all)
 
             VStack(spacing: 20) {
-               welcome()
+                welcome()
                 userNameField()
                 findMyWeatherInfo()
             }
