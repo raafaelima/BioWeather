@@ -17,6 +17,8 @@
 		5664828929689C66001E60BD /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828829689C66001E60BD /* Color+Custom.swift */; };
 		5664828B2968A9D0001E60BD /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828A2968A9D0001E60BD /* AuthenticationViewModel.swift */; };
 		5664828E2968AA5F001E60BD /* WeatherInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828D2968AA5F001E60BD /* WeatherInformationView.swift */; };
+		568E08762969ED3700BD5FA5 /* BioWeatherTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08752969ED3700BD5FA5 /* BioWeatherTestApp.swift */; };
+		568E08782969ED4E00BD5FA5 /* AppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08772969ED4E00BD5FA5 /* AppLauncher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		5664828829689C66001E60BD /* Color+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
 		5664828A2968A9D0001E60BD /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		5664828D2968AA5F001E60BD /* WeatherInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInformationView.swift; sourceTree = "<group>"; };
+		568E08752969ED3700BD5FA5 /* BioWeatherTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherTestApp.swift; sourceTree = "<group>"; };
+		568E08772969ED4E00BD5FA5 /* AppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLauncher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				5664824A29686F14001E60BD /* BioWeatherApp.swift */,
+				568E08752969ED3700BD5FA5 /* BioWeatherTestApp.swift */,
+				568E08772969ED4E00BD5FA5 /* AppLauncher.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -307,12 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568E08762969ED3700BD5FA5 /* BioWeatherTestApp.swift in Sources */,
 				5664828B2968A9D0001E60BD /* AuthenticationViewModel.swift in Sources */,
 				5664828929689C66001E60BD /* Color+Custom.swift in Sources */,
 				5664824B29686F14001E60BD /* BioWeatherApp.swift in Sources */,
 				5664828E2968AA5F001E60BD /* WeatherInformationView.swift in Sources */,
 				5664828229688371001E60BD /* AuthenticationView.swift in Sources */,
 				56648276296870A0001E60BD /* LocationManager.swift in Sources */,
+				568E08782969ED4E00BD5FA5 /* AppLauncher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +478,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BioWeather/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = KU682TTQW4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -502,7 +510,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BioWeather/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = KU682TTQW4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

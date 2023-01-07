@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@main
 struct BioWeatherApp: App {
 
     @AppStorage("isAuthenticated") private var isAuthenticated = false
