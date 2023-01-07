@@ -2,6 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ContentType</key>
+	<string>application/json</string>
+	<key>ApiKey</key>
+	<string>bd7d5a3407d2228a351f06e5251aed58</string>
+	<key>Host</key>
+	<string>http://api.weatherstack.com</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>The faceid is needed to authenticate the user</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>The location is needed to access the weather at the current location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>The location is needed to access the weather at the current location</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -9,11 +21,18 @@
 		<key>UISceneConfigurations</key>
 		<dict/>
 	</dict>
-	<key>NSFaceIDUsageDescription</key>
-	<string>The faceid is needed to authenticate the user</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>The location is needed to access the weather at the current location</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>The location is needed to access the weather at the current location</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>api.weatherstack.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

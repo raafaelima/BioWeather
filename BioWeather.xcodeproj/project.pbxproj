@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		5664824B29686F14001E60BD /* BioWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664824A29686F14001E60BD /* BioWeatherApp.swift */; };
 		5664824F29686F15001E60BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5664824E29686F15001E60BD /* Assets.xcassets */; };
-		5664825C29686F15001E60BD /* BioWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664825B29686F15001E60BD /* BioWeatherTests.swift */; };
-		5664826629686F16001E60BD /* BioWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664826529686F16001E60BD /* BioWeatherUITests.swift */; };
-		5664826829686F16001E60BD /* BioWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664826729686F16001E60BD /* BioWeatherUITestsLaunchTests.swift */; };
 		56648276296870A0001E60BD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56648275296870A0001E60BD /* LocationManager.swift */; };
 		5664828229688371001E60BD /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828129688371001E60BD /* AuthenticationView.swift */; };
 		5664828929689C66001E60BD /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828829689C66001E60BD /* Color+Custom.swift */; };
@@ -19,17 +16,12 @@
 		5664828E2968AA5F001E60BD /* WeatherInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828D2968AA5F001E60BD /* WeatherInformationView.swift */; };
 		568E08762969ED3700BD5FA5 /* BioWeatherTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08752969ED3700BD5FA5 /* BioWeatherTestApp.swift */; };
 		568E08782969ED4E00BD5FA5 /* AppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08772969ED4E00BD5FA5 /* AppLauncher.swift */; };
+		568E087A2969EE8900BD5FA5 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08792969EE8900BD5FA5 /* AppConfiguration.swift */; };
+		568E087F2969F02D00BD5FA5 /* AppConfigurationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E087E2969F02D00BD5FA5 /* AppConfigurationTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		5664825829686F15001E60BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5664823F29686F14001E60BD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5664824629686F14001E60BD;
-			remoteInfo = BioWeather;
-		};
-		5664826229686F16001E60BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5664823F29686F14001E60BD /* Project object */;
 			proxyType = 1;
@@ -43,10 +35,6 @@
 		5664824A29686F14001E60BD /* BioWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherApp.swift; sourceTree = "<group>"; };
 		5664824E29686F15001E60BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5664825729686F15001E60BD /* BioWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BioWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5664825B29686F15001E60BD /* BioWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherTests.swift; sourceTree = "<group>"; };
-		5664826129686F16001E60BD /* BioWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BioWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5664826529686F16001E60BD /* BioWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherUITests.swift; sourceTree = "<group>"; };
-		5664826729686F16001E60BD /* BioWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		56648275296870A0001E60BD /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5664827929687ABF001E60BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5664828129688371001E60BD /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
@@ -55,6 +43,9 @@
 		5664828D2968AA5F001E60BD /* WeatherInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInformationView.swift; sourceTree = "<group>"; };
 		568E08752969ED3700BD5FA5 /* BioWeatherTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherTestApp.swift; sourceTree = "<group>"; };
 		568E08772969ED4E00BD5FA5 /* AppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLauncher.swift; sourceTree = "<group>"; };
+		568E08792969EE8900BD5FA5 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		568E087B2969EF3500BD5FA5 /* Local.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Local.plist; sourceTree = "<group>"; };
+		568E087E2969F02D00BD5FA5 /* AppConfigurationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurationTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +63,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5664825E29686F16001E60BD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,7 +71,6 @@
 			children = (
 				5664824929686F14001E60BD /* BioWeather */,
 				5664825A29686F15001E60BD /* BioWeatherTests */,
-				5664826429686F16001E60BD /* BioWeatherUITests */,
 				5664824829686F14001E60BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,7 +80,6 @@
 			children = (
 				5664824729686F14001E60BD /* BioWeather.app */,
 				5664825729686F15001E60BD /* BioWeatherTests.xctest */,
-				5664826129686F16001E60BD /* BioWeatherUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,18 +101,9 @@
 		5664825A29686F15001E60BD /* BioWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				5664825B29686F15001E60BD /* BioWeatherTests.swift */,
+				568E087D2969F02100BD5FA5 /* Configurations */,
 			);
 			path = BioWeatherTests;
-			sourceTree = "<group>";
-		};
-		5664826429686F16001E60BD /* BioWeatherUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5664826529686F16001E60BD /* BioWeatherUITests.swift */,
-				5664826729686F16001E60BD /* BioWeatherUITestsLaunchTests.swift */,
-			);
-			path = BioWeatherUITests;
 			sourceTree = "<group>";
 		};
 		5664827429687093001E60BD /* Location */ = {
@@ -155,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				5664827929687ABF001E60BD /* Info.plist */,
+				568E087B2969EF3500BD5FA5 /* Local.plist */,
+				568E08792969EE8900BD5FA5 /* AppConfiguration.swift */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -182,6 +157,14 @@
 				5664828D2968AA5F001E60BD /* WeatherInformationView.swift */,
 			);
 			path = WeatherInformation;
+			sourceTree = "<group>";
+		};
+		568E087D2969F02100BD5FA5 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				568E087E2969F02D00BD5FA5 /* AppConfigurationTest.swift */,
+			);
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,24 +205,6 @@
 			productReference = 5664825729686F15001E60BD /* BioWeatherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5664826029686F16001E60BD /* BioWeatherUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5664827129686F16001E60BD /* Build configuration list for PBXNativeTarget "BioWeatherUITests" */;
-			buildPhases = (
-				5664825D29686F16001E60BD /* Sources */,
-				5664825E29686F16001E60BD /* Frameworks */,
-				5664825F29686F16001E60BD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5664826329686F16001E60BD /* PBXTargetDependency */,
-			);
-			name = BioWeatherUITests;
-			productName = BioWeatherUITests;
-			productReference = 5664826129686F16001E60BD /* BioWeatherUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -254,10 +219,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					5664825629686F15001E60BD = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 5664824629686F14001E60BD;
-					};
-					5664826029686F16001E60BD = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 5664824629686F14001E60BD;
 					};
@@ -278,7 +239,6 @@
 			targets = (
 				5664824629686F14001E60BD /* BioWeather */,
 				5664825629686F15001E60BD /* BioWeatherTests */,
-				5664826029686F16001E60BD /* BioWeatherUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -299,13 +259,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5664825F29686F16001E60BD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -313,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568E087A2969EE8900BD5FA5 /* AppConfiguration.swift in Sources */,
 				568E08762969ED3700BD5FA5 /* BioWeatherTestApp.swift in Sources */,
 				5664828B2968A9D0001E60BD /* AuthenticationViewModel.swift in Sources */,
 				5664828929689C66001E60BD /* Color+Custom.swift in Sources */,
@@ -328,16 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5664825C29686F15001E60BD /* BioWeatherTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5664825D29686F16001E60BD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5664826829686F16001E60BD /* BioWeatherUITestsLaunchTests.swift in Sources */,
-				5664826629686F16001E60BD /* BioWeatherUITests.swift in Sources */,
+				568E087F2969F02D00BD5FA5 /* AppConfigurationTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,11 +293,6 @@
 			isa = PBXTargetDependency;
 			target = 5664824629686F14001E60BD /* BioWeather */;
 			targetProxy = 5664825829686F15001E60BD /* PBXContainerItemProxy */;
-		};
-		5664826329686F16001E60BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5664824629686F14001E60BD /* BioWeather */;
-			targetProxy = 5664826229686F16001E60BD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -407,6 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = BioWeather/Configurations/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -461,6 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = BioWeather/Configurations/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -544,6 +486,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KU682TTQW4;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BioWeather/Configurations/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rcl.BioWeatherTests;
@@ -564,6 +507,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KU682TTQW4;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BioWeather/Configurations/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rcl.BioWeatherTests;
@@ -575,41 +519,119 @@
 			};
 			name = Release;
 		};
-		5664827229686F16001E60BD /* Debug */ = {
+		568E08802969F09D00BD5FA5 /* Local */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KU682TTQW4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rcl.BioWeatherUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BioWeather;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = BioWeather/Configurations/Local.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Local;
 		};
-		5664827329686F16001E60BD /* Release */ = {
+		568E08812969F09D00BD5FA5 /* Local */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = KU682TTQW4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BioWeather/Configurations/Local.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The location is needed to access the weather at the current location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The location is needed to access the weather at the current location";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rcl.BioWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Local;
+		};
+		568E08822969F09D00BD5FA5 /* Local */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KU682TTQW4;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BioWeather/Configurations/Local.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rcl.BioWeatherUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rcl.BioWeatherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BioWeather;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BioWeather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BioWeather";
 			};
-			name = Release;
+			name = Local;
 		};
 /* End XCBuildConfiguration section */
 
@@ -618,6 +640,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5664826929686F16001E60BD /* Debug */,
+				568E08802969F09D00BD5FA5 /* Local */,
 				5664826A29686F16001E60BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -627,6 +650,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5664826C29686F16001E60BD /* Debug */,
+				568E08812969F09D00BD5FA5 /* Local */,
 				5664826D29686F16001E60BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -636,16 +660,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5664826F29686F16001E60BD /* Debug */,
+				568E08822969F09D00BD5FA5 /* Local */,
 				5664827029686F16001E60BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5664827129686F16001E60BD /* Build configuration list for PBXNativeTarget "BioWeatherUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5664827229686F16001E60BD /* Debug */,
-				5664827329686F16001E60BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

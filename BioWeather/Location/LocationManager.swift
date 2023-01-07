@@ -17,10 +17,10 @@ class LocationManager: NSObject {
     private var locationManager: CLLocationManager?
 
     /// The current location information
-    public var currentLocation: CLLocation?
+    var currentLocation: CLLocation?
 
     /// The shared singleton LocationManager oject
-    public static let shared = LocationManager()
+    static let shared = LocationManager()
 
     private override init() { }
 
