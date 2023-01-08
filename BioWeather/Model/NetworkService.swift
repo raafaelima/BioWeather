@@ -7,9 +7,7 @@
 
 import Foundation
 
-protocol Service {
+protocol NetworkService {
     var dataParser: DataParser { get }
     var networkProvider: NetworkProvider { get }
-
-    func fetchCurrentWeather() async throws -> CurrentWeather
 }

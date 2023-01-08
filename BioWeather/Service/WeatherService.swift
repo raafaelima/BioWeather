@@ -5,7 +5,7 @@
 //  Created by Rafael Lima on 07/01/2023.
 //
 
-struct WeatherService: Service {
+struct WeatherService: NetworkService {
 
     var dataParser: DataParser
     var networkProvider: NetworkProvider

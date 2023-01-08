@@ -6,35 +6,28 @@
 //
 
 import SwiftUI
-import LocalAuthentication
 
 class AuthenticationViewModel: ObservableObject {
 
-    private let locationAuthSession: LAContext = LAContext()
     @AppStorage("isAuthenticated") private var isAuthenticated = false
 
+    private let biometrictAuthService = BiometricAuthenticationService()
+
     func authenticateUser() {
-        if isBiometricAuthAvailable() {
+        if biometrictAuthService.isBiometricAuthAvailable() {
             biometricAuthentication()
         } else {
             userNameAuthentication()
         }
     }
 
-    private func isBiometricAuthAvailable() -> Bool {
-        return locationAuthSession.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: .none)
-    }
-
     private func biometricAuthentication() {
         Task {
             do {
-                try await locationAuthSession.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "To access the current location weather")
+                try await biometrictAuthService.startAuthentication()
                 toogleAuthStatus()
             } catch {
                 print(error.localizedDescription)
-                DispatchQueue.main.async {
-                    self.isAuthenticated = false
-                }
             }
         }
     }

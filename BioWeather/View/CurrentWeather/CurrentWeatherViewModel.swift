@@ -14,7 +14,7 @@ class CurrentWeatherViewModel: ObservableObject {
     @Published var isLoadingData: Bool = true
     @Published var errorAtLoadingWeatherData: Bool = false
 
-    private let service: Service = WeatherService()
+    private let service = WeatherService()
 
     init(currentWeather: CurrentWeather = CurrentWeather.noData) {
         self.currentWeather = currentWeather

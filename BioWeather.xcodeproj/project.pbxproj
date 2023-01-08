@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		562A6F60296A55990021228A /* BiometricAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562A6F5F296A55990021228A /* BiometricAuthenticationService.swift */; };
 		5664824B29686F14001E60BD /* BioWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664824A29686F14001E60BD /* BioWeatherApp.swift */; };
 		5664824F29686F15001E60BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5664824E29686F15001E60BD /* Assets.xcassets */; };
 		56648276296870A0001E60BD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56648275296870A0001E60BD /* LocationManager.swift */; };
@@ -35,7 +36,7 @@
 		568E08B12969F7C200BD5FA5 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08B02969F7C200BD5FA5 /* Coordinates.swift */; };
 		568E08B32969F85400BD5FA5 /* Coordinates+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08B22969F85400BD5FA5 /* Coordinates+Map.swift */; };
 		568E08B52969F8AF00BD5FA5 /* CurrentWeatherEndpointTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08B42969F8AF00BD5FA5 /* CurrentWeatherEndpointTest.swift */; };
-		568E08B72969FA3400BD5FA5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08B62969FA3400BD5FA5 /* Service.swift */; };
+		568E08B72969FA3400BD5FA5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08B62969FA3400BD5FA5 /* NetworkService.swift */; };
 		568E08BA2969FA9800BD5FA5 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08B92969FA9800BD5FA5 /* DataParser.swift */; };
 		568E08BC2969FAA800BD5FA5 /* JsonDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08BB2969FAA800BD5FA5 /* JsonDataParser.swift */; };
 		568E08BE2969FABF00BD5FA5 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E08BD2969FABF00BD5FA5 /* ParserError.swift */; };
@@ -68,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		562A6F5F296A55990021228A /* BiometricAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticationService.swift; sourceTree = "<group>"; };
 		5664824729686F14001E60BD /* BioWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BioWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5664824A29686F14001E60BD /* BioWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherApp.swift; sourceTree = "<group>"; };
 		5664824E29686F15001E60BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +102,7 @@
 		568E08B02969F7C200BD5FA5 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		568E08B22969F85400BD5FA5 /* Coordinates+Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinates+Map.swift"; sourceTree = "<group>"; };
 		568E08B42969F8AF00BD5FA5 /* CurrentWeatherEndpointTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherEndpointTest.swift; sourceTree = "<group>"; };
-		568E08B62969FA3400BD5FA5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		568E08B62969FA3400BD5FA5 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		568E08B92969FA9800BD5FA5 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		568E08BB2969FAA800BD5FA5 /* JsonDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDataParser.swift; sourceTree = "<group>"; };
 		568E08BD2969FABF00BD5FA5 /* ParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserError.swift; sourceTree = "<group>"; };
@@ -375,7 +377,7 @@
 				568E08B02969F7C200BD5FA5 /* Coordinates.swift */,
 				568E08D1296A02DF00BD5FA5 /* CurrentWeather.swift */,
 				568E08CF296A001000BD5FA5 /* Location.swift */,
-				568E08B62969FA3400BD5FA5 /* Service.swift */,
+				568E08B62969FA3400BD5FA5 /* NetworkService.swift */,
 				568E08C22969FB8E00BD5FA5 /* Weather.swift */,
 			);
 			path = Model;
@@ -430,6 +432,7 @@
 		568E08DE296A08D100BD5FA5 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				562A6F5F296A55990021228A /* BiometricAuthenticationService.swift */,
 				568E08E0296A08E800BD5FA5 /* WeatherService.swift */,
 				568E08B82969FA7700BD5FA5 /* Parser */,
 			);
@@ -576,7 +579,7 @@
 				568E08F0296A0FF300BD5FA5 /* CurrentWeatherViewModel.swift in Sources */,
 				568E08D2296A02DF00BD5FA5 /* CurrentWeather.swift in Sources */,
 				568E08942969F32900BD5FA5 /* URLBuilder.swift in Sources */,
-				568E08B72969FA3400BD5FA5 /* Service.swift in Sources */,
+				568E08B72969FA3400BD5FA5 /* NetworkService.swift in Sources */,
 				568E08852969F24800BD5FA5 /* LocaleProvider.swift in Sources */,
 				568E08D0296A001000BD5FA5 /* Location.swift in Sources */,
 				5664824B29686F14001E60BD /* BioWeatherApp.swift in Sources */,
@@ -588,6 +591,7 @@
 				568E08E1296A08E800BD5FA5 /* WeatherService.swift in Sources */,
 				568E08B12969F7C200BD5FA5 /* Coordinates.swift in Sources */,
 				568E08922969F32900BD5FA5 /* NetworkProvider.swift in Sources */,
+				562A6F60296A55990021228A /* BiometricAuthenticationService.swift in Sources */,
 				568E08BE2969FABF00BD5FA5 /* ParserError.swift in Sources */,
 				5664828229688371001E60BD /* AuthenticationView.swift in Sources */,
 				568E08972969F32900BD5FA5 /* ApiError.swift in Sources */,
