@@ -12,6 +12,7 @@ class CurrentWeatherViewModel: ObservableObject {
 
     @Published var currentWeather: CurrentWeather
     @Published var isLoadingData: Bool = true
+    @Published var errorAtLoadingWeatherData: Bool = false
 
     private let service: Service = WeatherService()
 
@@ -20,17 +21,40 @@ class CurrentWeatherViewModel: ObservableObject {
     }
 
     func loadCurrentWeatherFromLocation() {
-        let currentLocation = LocationManager.shared.currentLocation
-        let locationCoordinates = Coordinates.from(currentLocation)
+        resetScreenState()
 
         Task {
-            let weather = await service.fetchCurrentWeather(from: locationCoordinates)
-            DispatchQueue.main.async {
-                withAnimation {
-                    self.currentWeather = weather
-                    self.isLoadingData = false
-                }
+            do {
+                let weather = try await service.fetchCurrentWeather()
+                updateUIWithWeatherData(weatherData: weather)
+            } catch {
+                print(error.localizedDescription)
+                raiseErrorAtLoadingData()
             }
         }
+    }
+
+    private func updateUIWithWeatherData(weatherData: CurrentWeather) {
+        DispatchQueue.main.async {
+            withAnimation {
+                self.currentWeather = weatherData
+                self.isLoadingData = false
+                self.errorAtLoadingWeatherData = false
+            }
+        }
+    }
+
+    private func raiseErrorAtLoadingData() {
+        DispatchQueue.main.async {
+            withAnimation {
+                self.isLoadingData = false
+                self.errorAtLoadingWeatherData = true
+            }
+        }
+    }
+
+    private func resetScreenState() {
+        self.isLoadingData = true
+        self.errorAtLoadingWeatherData = false
     }
 }

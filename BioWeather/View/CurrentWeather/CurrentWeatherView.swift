@@ -20,7 +20,13 @@ struct CurrentWeatherView: View {
                 if viewModel.isLoadingData {
                     ProgressView("Loading")
                 } else {
-                    weatherData()
+                    if viewModel.errorAtLoadingWeatherData {
+                        errorAtLoadingData()
+                    } else {
+                        ScrollView {
+                            weatherData()
+                        }
+                    }
                 }
             }
         }
@@ -45,6 +51,12 @@ struct CurrentWeatherView: View {
                 .font(.system(size: 24))
                 .fontWeight(.semibold)
                 .shadow(radius: 25)
+
+            Text(viewModel.currentWeather.weather.weatherState())
+                .font(.system(size: 20))
+                .fontWeight(.semibold)
+                .shadow(radius: 25)
+                .padding(.top, -10)
 
             Text(viewModel.currentWeather.weather.temperatureWithIndicator())
                 .font(.system(size: 96))
@@ -86,6 +98,21 @@ struct CurrentWeatherView: View {
         }
     }
 
+    private func errorAtLoadingData() -> some View {
+        VStack {
+            Text("Unfortunately there was a problem with our services. Please, try again in a few seconds.")
+
+            Button(action: viewModel.loadCurrentWeatherFromLocation, label: {
+                Text("Find My Weather Info")
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 6)
+            })
+            .padding(.horizontal, 50)
+            .padding(.top, 20)
+            .buttonStyle(.borderedProminent)
+        }
+    }
+
     private func windSpeed() -> String {
         let speed = viewModel.currentWeather.weather.windSpeed
         return "\(speed) km/h"
@@ -119,7 +146,9 @@ struct CurrentWeatherView_Previews: PreviewProvider {
         let porto = Location(name: "Porto", country: "Portugal", region: "Porto", latitude: 123, longitude: 456)
         let sunny = Weather(temperature: 28, feelsLike: 32, weatherCode: 116, windSpeed: 13, humidity: 74, descriptions: ["Sunny"])
         let weather = CurrentWeather(location: porto, weather: sunny)
-        return CurrentWeatherViewModel(currentWeather: weather)
+        let vm = CurrentWeatherViewModel(currentWeather: weather)
+        vm.isLoadingData = false
+        return vm
     }
 }
 #endif

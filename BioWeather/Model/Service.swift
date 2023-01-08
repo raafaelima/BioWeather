@@ -11,5 +11,5 @@ protocol Service {
     var dataParser: DataParser { get }
     var networkProvider: NetworkProvider { get }
 
-    func fetchCurrentWeather(from location: Coordinates) async -> CurrentWeather
+    func fetchCurrentWeather() async throws -> CurrentWeather
 }

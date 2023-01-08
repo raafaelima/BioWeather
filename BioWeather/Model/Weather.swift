@@ -20,6 +20,10 @@ struct Weather {
     func temperatureWithIndicator() -> String {
         return "\(temperature)˚"
     }
+
+    func weatherState() -> String {
+        return descriptions.joined(separator: ", ")
+    }
 }
 
 extension Weather: Codable {

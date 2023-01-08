@@ -256,7 +256,6 @@
 			children = (
 				568E088C2969F32900BD5FA5 /* Endpoint */,
 				568E08902969F32900BD5FA5 /* Error */,
-				568E08B82969FA7700BD5FA5 /* Parser */,
 				568E08872969F32900BD5FA5 /* Provider */,
 				568E088E2969F32900BD5FA5 /* Reachability */,
 				568E088A2969F32900BD5FA5 /* Support */,
@@ -311,7 +310,6 @@
 			isa = PBXGroup;
 			children = (
 				568E089B2969F44400BD5FA5 /* Endpoint */,
-				568E08BF2969FB1400BD5FA5 /* Parser */,
 				568E089F2969F46E00BD5FA5 /* Provider */,
 				568E08D7296A054B00BD5FA5 /* Responses */,
 				568E08A72969F4E800BD5FA5 /* Support */,
@@ -433,6 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				568E08E0296A08E800BD5FA5 /* WeatherService.swift */,
+				568E08B82969FA7700BD5FA5 /* Parser */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -441,6 +440,7 @@
 			isa = PBXGroup;
 			children = (
 				568E08E7296A0B2E00BD5FA5 /* WeatherServiceTest.swift */,
+				568E08BF2969FB1400BD5FA5 /* Parser */,
 			);
 			path = Service;
 			sourceTree = "<group>";

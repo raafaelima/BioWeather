@@ -16,15 +16,14 @@ struct WeatherService: Service {
         self.networkProvider = networkProvider
     }
 
-    func fetchCurrentWeather(from location: Coordinates) async -> CurrentWeather {
-        do {
-            let endpoint = CurrentWeatherEndpoint(location: location)
-            let responseData = try await networkProvider.requestData(from: endpoint)
-            let parsedData: CurrentWeather = try dataParser.process(data: responseData)
-            return parsedData
-        } catch {
-            print(error.localizedDescription)
-            return CurrentWeather.noData
-        }
+    func fetchCurrentWeather() async throws -> CurrentWeather {
+        let currentLocation = LocationManager.shared.currentLocation
+        let locationCoordinates = Coordinates.from(currentLocation)
+
+        let endpoint = CurrentWeatherEndpoint(location: locationCoordinates)
+        let responseData = try await networkProvider.requestData(from: endpoint)
+
+        let parsedData: CurrentWeather = try dataParser.process(data: responseData)
+        return parsedData
     }
 }

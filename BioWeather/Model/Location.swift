@@ -18,7 +18,7 @@ struct Location {
     static var noData: Location = Location(name: "", country: "", region: "", latitude: 0.0, longitude: 0.0)
 
     func description() -> String {
-        return "\(region), \(country)"
+        return "\(name), \(region)"
     }
 }
 
