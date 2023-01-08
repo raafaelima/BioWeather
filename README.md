@@ -26,6 +26,19 @@ In the app you will find the following structure:
 
 ![GeneralArch](https://user-images.githubusercontent.com/7543763/211175168-3e1a57a7-0466-4a15-8634-e9ca6c76c5ea.png)
 
+# App Images
+
+## Iphone 8
+| Login             |  Biometric Identification | Weather Information
+:-------------------------:|:-------------------------:|:-------------------------:
+![Screenshot 2023-01-08 at 01 26 52](https://user-images.githubusercontent.com/7543763/211176667-b8f92327-5f46-40d2-8a43-3953cb343c27.png) |  ![Simulator Screen Shot - iPhone 8 - 2023-01-08 at 01 19 35](https://user-images.githubusercontent.com/7543763/211176635-1bcb895e-c0ab-4b67-a89f-71fe5ed4af13.png) |  ![Screenshot 2023-01-08 at 01 27 23](https://user-images.githubusercontent.com/7543763/211176674-2baab498-adda-4f02-9a2e-9540e5102b4a.png)
+
+## Iphone 14 and DarkMode
+| Login             |  Biometric Identification | Weather Information
+:-------------------------:|:-------------------------:|:-------------------------:
+![Simulator Screen Shot - iPhone 14 Pro - 2023-01-08 at 01 24 47](https://user-images.githubusercontent.com/7543763/211176620-6084076c-6d5d-4116-8439-64cbf1758687.png)  |  ![Simulator Screen Shot - iPhone 14 Pro - 2023-01-08 at 01 19 56](https://user-images.githubusercontent.com/7543763/211176606-556a6e80-d7d8-4dad-94bd-1716ac7504f3.png) |  ![Simulator Screen Shot - iPhone 14 Pro - 2023-01-08 at 00 46 43](https://user-images.githubusercontent.com/7543763/211176596-f23f065c-0f29-42ce-a23a-b32bafa8bf09.png)
+
+
 ## Getting Started
 1. macOS Monterey 12.5 or higher
 2. Install [HomeBrew](http://brew.sh/)
