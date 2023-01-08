@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BioWeatherApp: App {
 
-    @AppStorage("isAuthenticated") private var isAuthenticated = false
+    @AppStorage(AppStorageKey.authenticated.rawValue) private var isAuthenticated = false
     @UIApplicationDelegateAdaptor(BioWeatherAppDelegate.self) var delegate
 
     var body: some Scene {
@@ -37,6 +37,6 @@ final class BioWeatherAppDelegate: NSObject, UIApplicationDelegate {
         print("Application will terminate")
         LocationManager.shared.stopReceivingLocationUpdates()
         // Remove Auth Status
-        UserDefaults.standard.set(false, forKey: "isAuthenticated")
+        UserDefaults.standard.set(false, forKey: AppStorageKey.authenticated.rawValue)
     }
 }

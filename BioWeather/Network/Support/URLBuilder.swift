@@ -22,8 +22,8 @@ struct URLBuilder: URLBuilding {
 
     private func baseRequestQueryItens() -> [URLQueryItem] {
         return [
-            URLQueryItem(name: "access_key", value: apiKey()),
-            URLQueryItem(name: "units", value: LocaleProvider.conversionUnit())
+            URLQueryItem(name: QueryItemKey.accessKey.rawValue, value: apiKey()),
+            URLQueryItem(name: QueryItemKey.conversionUnit.rawValue, value: LocaleProvider.conversionUnit())
         ]
     }
 

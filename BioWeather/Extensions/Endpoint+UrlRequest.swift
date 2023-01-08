@@ -10,11 +10,11 @@ import Foundation
 extension Endpoint {
     func urlRequest() -> URLRequest {
         let builder: URLBuilding = URLBuilder()
-        let endpointURL = builder.build(to: path, with: params)
+        let endpointURL = builder.build(to: path.rawValue, with: params)
 
         var request = URLRequest(url: endpointURL)
-        request.addValue(contentType(), forHTTPHeaderField: "Accept")
-        request.addValue(contentType(), forHTTPHeaderField: "Content-Type")
+        request.addValue(contentType(), forHTTPHeaderField: HeaderKey.accept.rawValue)
+        request.addValue(contentType(), forHTTPHeaderField: HeaderKey.contentType.rawValue)
         return request
     }
 

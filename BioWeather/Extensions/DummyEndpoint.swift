@@ -9,6 +9,6 @@ import Foundation
 @testable import BioWeather
 
 struct DummyEndpoint: Endpoint {
-    var path: String = "/dummy"
+    var path: EndpointPath = .currentWeather
     var params: [URLQueryItem] = []
 }

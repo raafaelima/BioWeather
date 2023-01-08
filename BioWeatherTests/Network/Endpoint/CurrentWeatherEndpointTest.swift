@@ -21,7 +21,7 @@ class CurrentWeatherEndpointTest: XCTestCase {
     }
 
     func testPathWillBeFilled() throws {
-        XCTAssertEqual(sut.path, "/current")
+        XCTAssertEqual(sut.path.rawValue, "/current")
     }
 
     func testQueryParamsExists() throws {

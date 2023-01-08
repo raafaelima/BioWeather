@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		562A6F60296A55990021228A /* BiometricAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562A6F5F296A55990021228A /* BiometricAuthenticationService.swift */; };
+		562A6F6D296B79430021228A /* QueryItemKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562A6F6C296B79430021228A /* QueryItemKey.swift */; };
+		562A6F6F296B79C70021228A /* EndpointPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562A6F6E296B79C70021228A /* EndpointPath.swift */; };
+		562A6F72296B7DA50021228A /* HeaderKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562A6F71296B7DA50021228A /* HeaderKey.swift */; };
+		562A6F74296B7E770021228A /* AppStorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562A6F73296B7E770021228A /* AppStorageKey.swift */; };
 		5664824B29686F14001E60BD /* BioWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664824A29686F14001E60BD /* BioWeatherApp.swift */; };
 		5664824F29686F15001E60BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5664824E29686F15001E60BD /* Assets.xcassets */; };
 		56648276296870A0001E60BD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56648275296870A0001E60BD /* LocationManager.swift */; };
@@ -70,6 +74,10 @@
 
 /* Begin PBXFileReference section */
 		562A6F5F296A55990021228A /* BiometricAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticationService.swift; sourceTree = "<group>"; };
+		562A6F6C296B79430021228A /* QueryItemKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryItemKey.swift; sourceTree = "<group>"; };
+		562A6F6E296B79C70021228A /* EndpointPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointPath.swift; sourceTree = "<group>"; };
+		562A6F71296B7DA50021228A /* HeaderKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderKey.swift; sourceTree = "<group>"; };
+		562A6F73296B7E770021228A /* AppStorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageKey.swift; sourceTree = "<group>"; };
 		5664824729686F14001E60BD /* BioWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BioWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5664824A29686F14001E60BD /* BioWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioWeatherApp.swift; sourceTree = "<group>"; };
 		5664824E29686F15001E60BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +150,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		562A6F70296B7B080021228A /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				568E08842969F24800BD5FA5 /* LocaleProvider.swift */,
+			);
+			path = Locale;
+			sourceTree = "<group>";
+		};
 		5664823E29686F14001E60BD = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +183,7 @@
 				5664827A29688038001E60BD /* Configurations */,
 				566482772968788A001E60BD /* Core */,
 				5664828729689C56001E60BD /* Extensions */,
+				562A6F70296B7B080021228A /* Locale */,
 				5664827429687093001E60BD /* Location */,
 				568E08AF2969F7BA00BD5FA5 /* Model */,
 				568E08862969F32900BD5FA5 /* Network */,
@@ -179,11 +196,11 @@
 		5664825A29686F15001E60BD /* BioWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				568E08E6296A0B2700BD5FA5 /* Service */,
 				568E087D2969F02100BD5FA5 /* Configurations */,
 				568E08C62969FE3900BD5FA5 /* Helpers */,
 				568E08C92969FE5700BD5FA5 /* JSONMocks */,
 				568E089A2969F43F00BD5FA5 /* Network */,
+				568E08E6296A0B2700BD5FA5 /* Service */,
 			);
 			path = BioWeatherTests;
 			sourceTree = "<group>";
@@ -212,7 +229,7 @@
 				5664827929687ABF001E60BD /* Info.plist */,
 				568E087B2969EF3500BD5FA5 /* Local.plist */,
 				568E08792969EE8900BD5FA5 /* AppConfiguration.swift */,
-				568E08842969F24800BD5FA5 /* LocaleProvider.swift */,
+				562A6F73296B7E770021228A /* AppStorageKey.swift */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -230,8 +247,8 @@
 			isa = PBXGroup;
 			children = (
 				5664828829689C66001E60BD /* Color+Custom.swift */,
-				568E08982969F37500BD5FA5 /* Endpoint+UrlRequest.swift */,
 				568E08B22969F85400BD5FA5 /* Coordinates+Map.swift */,
+				568E08982969F37500BD5FA5 /* Endpoint+UrlRequest.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -278,6 +295,8 @@
 			isa = PBXGroup;
 			children = (
 				568E088B2969F32900BD5FA5 /* URLBuilder.swift */,
+				562A6F6C296B79430021228A /* QueryItemKey.swift */,
+				562A6F71296B7DA50021228A /* HeaderKey.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -285,8 +304,9 @@
 		568E088C2969F32900BD5FA5 /* Endpoint */ = {
 			isa = PBXGroup;
 			children = (
-				568E088D2969F32900BD5FA5 /* Endpoint.swift */,
 				568E08AD2969F69300BD5FA5 /* CurrentWeatherEndpoint.swift */,
+				568E088D2969F32900BD5FA5 /* Endpoint.swift */,
+				562A6F6E296B79C70021228A /* EndpointPath.swift */,
 			);
 			path = Endpoint;
 			sourceTree = "<group>";
@@ -432,9 +452,9 @@
 		568E08DE296A08D100BD5FA5 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				568E08B82969FA7700BD5FA5 /* Parser */,
 				562A6F5F296A55990021228A /* BiometricAuthenticationService.swift */,
 				568E08E0296A08E800BD5FA5 /* WeatherService.swift */,
-				568E08B82969FA7700BD5FA5 /* Parser */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -442,8 +462,8 @@
 		568E08E6296A0B2700BD5FA5 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				568E08E7296A0B2E00BD5FA5 /* WeatherServiceTest.swift */,
 				568E08BF2969FB1400BD5FA5 /* Parser */,
+				568E08E7296A0B2E00BD5FA5 /* WeatherServiceTest.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -567,7 +587,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562A6F6D296B79430021228A /* QueryItemKey.swift in Sources */,
 				568E08952969F32900BD5FA5 /* Endpoint.swift in Sources */,
+				562A6F72296B7DA50021228A /* HeaderKey.swift in Sources */,
 				568E087A2969EE8900BD5FA5 /* AppConfiguration.swift in Sources */,
 				568E08BA2969FA9800BD5FA5 /* DataParser.swift in Sources */,
 				568E08992969F37500BD5FA5 /* Endpoint+UrlRequest.swift in Sources */,
@@ -584,6 +606,7 @@
 				568E08D0296A001000BD5FA5 /* Location.swift in Sources */,
 				5664824B29686F14001E60BD /* BioWeatherApp.swift in Sources */,
 				568E08962969F32900BD5FA5 /* Reachability.swift in Sources */,
+				562A6F74296B7E770021228A /* AppStorageKey.swift in Sources */,
 				568E08C32969FB8E00BD5FA5 /* Weather.swift in Sources */,
 				568E08932969F32900BD5FA5 /* URLSessionNetworkProvider.swift in Sources */,
 				568E08B32969F85400BD5FA5 /* Coordinates+Map.swift in Sources */,
@@ -593,6 +616,7 @@
 				568E08922969F32900BD5FA5 /* NetworkProvider.swift in Sources */,
 				562A6F60296A55990021228A /* BiometricAuthenticationService.swift in Sources */,
 				568E08BE2969FABF00BD5FA5 /* ParserError.swift in Sources */,
+				562A6F6F296B79C70021228A /* EndpointPath.swift in Sources */,
 				5664828229688371001E60BD /* AuthenticationView.swift in Sources */,
 				568E08972969F32900BD5FA5 /* ApiError.swift in Sources */,
 				56648276296870A0001E60BD /* LocationManager.swift in Sources */,

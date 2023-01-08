@@ -9,7 +9,7 @@ import SwiftUI
 
 class AuthenticationViewModel: ObservableObject {
 
-    @AppStorage("isAuthenticated") private var isAuthenticated = false
+    @AppStorage(AppStorageKey.authenticated.rawValue) private var isAuthenticated = false
 
     private let biometrictAuthService = BiometricAuthenticationService()
 

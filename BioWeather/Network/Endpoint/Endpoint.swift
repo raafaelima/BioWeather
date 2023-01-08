@@ -8,6 +8,6 @@
 import Foundation
 
 protocol Endpoint {
-    var path: String { get set }
+    var path: EndpointPath { get set }
     var params: [URLQueryItem] { get set }
 }

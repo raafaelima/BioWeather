@@ -9,12 +9,12 @@ import Foundation
 import MapKit
 
 struct CurrentWeatherEndpoint: Endpoint {
-    var path: String = "/current"
+    var path: EndpointPath = .currentWeather
     var params: [URLQueryItem] = []
 
     init(location: Coordinates) {
         self.params = [
-            URLQueryItem(name: "query", value: location.formmated())
+            URLQueryItem(name: QueryItemKey.query.rawValue, value: location.formmated())
         ]
     }
 }
