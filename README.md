@@ -3,7 +3,7 @@
 BioWeather is an iOS App to search the weather data for you current location, after a biometric authentication.
 
 ## About the APP
-The app is architected using the principles of SOLID and PACT, I believe that this is sufficient to get a clear understanding of the code and how to navigate through it. Also, the app is written in Swift 5
+The app is architected using the principles of Clean/Onion Architecture, SOLID and MVVM design pattern for UI/Interaction, the user interface was done using SwiftUI. I believe that this is sufficient to get a clear understanding of the code and how to navigate through it. All of it was chosen to keep the things as simple as possible due to the scope of this project. I'm using Fastlane to automate the tests and lint executions. Also, the app is written in Swift 5.
 
 In the app you will find the following structure:
 * BioWeather - All the app code is in there
@@ -12,7 +12,6 @@ In the app you will find the following structure:
 **Important Point: The UnitTests should be running, using the CMD+U into the _WeatherExploreTests_ scheme or with the _make test_ command, as they use some specific .plists and configurations that only that scheme provides.**
 
 ## TechDetails
-The architecture chosen is the Clean/Onion Architecture, plus MVVM design pattern for UI/Interaction, to keep the things as simple as possible. I'm using Fastlane to automate the tests and lint executions. 
 
 >```bash
 >XCode Version 14.2 (14C18)
