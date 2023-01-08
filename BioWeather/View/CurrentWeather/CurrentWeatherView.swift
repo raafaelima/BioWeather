@@ -23,9 +23,7 @@ struct CurrentWeatherView: View {
                     if viewModel.errorAtLoadingWeatherData {
                         errorAtLoadingData()
                     } else {
-                        ScrollView {
-                            weatherData()
-                        }
+                        weatherData()
                     }
                 }
             }
@@ -34,14 +32,15 @@ struct CurrentWeatherView: View {
     }
 
     private func weatherData() -> some View {
-        VStack(spacing: 50) {
+        ScrollView {
+            VStack(spacing: 50) {
+                Image(weatherIconKey())
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 250, height: 250)
 
-            Image(weatherIconKey())
-                .resizable()
-                .scaledToFit()
-                .frame(width: 250, height: 250)
-
-            weatherInfo()
+                weatherInfo()
+            }
         }
     }
 
