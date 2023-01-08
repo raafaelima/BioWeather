@@ -12,7 +12,7 @@ In the app you will find the following structure:
 * BioWeather - All the app code is in there
 * BioWeatherTests - All the Unit Tests
 
-**Important Point: The UnitTests should be running, using the CMD+U into the _WeatherExploreTests_ scheme or with the _make test_ command, as they use some specific .plists and configurations that only that scheme provides.**
+**Important Point: The UnitTests should be running, using the CMD+U into the _BioWeatherTests_ scheme or with the _make test_ command, as they use some specific .plists and configurations that only that scheme provides.**
 
 ## TechDetails
 
