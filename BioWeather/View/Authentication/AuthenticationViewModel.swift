@@ -22,10 +22,10 @@ class AuthenticationViewModel: ObservableObject {
     }
 
     private func biometricAuthentication() {
-        Task {
+        Task { [weak self] in
             do {
-                try await biometrictAuthService.startAuthentication()
-                toogleAuthStatus()
+                try await self?.biometrictAuthService.startAuthentication()
+                self?.toogleAuthStatus()
             } catch {
                 print(error.localizedDescription)
             }

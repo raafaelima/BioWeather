@@ -23,13 +23,13 @@ class CurrentWeatherViewModel: ObservableObject {
     func loadCurrentWeatherFromLocation() {
         resetScreenState()
 
-        Task {
+        Task { [weak self] in
             do {
-                let weather = try await service.fetchCurrentWeather()
-                updateUIWithWeatherData(weatherData: weather)
+                let weather = try await self?.service.fetchCurrentWeather() ?? CurrentWeather.noData
+                self?.updateUIWithWeatherData(weatherData: weather)
             } catch {
                 print(error.localizedDescription)
-                raiseErrorAtLoadingData()
+                self?.raiseErrorAtLoadingData()
             }
         }
     }
