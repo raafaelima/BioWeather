@@ -16,15 +16,13 @@ struct CurrentWeatherView: View {
             LinearGradient(colors: [.gradientStart, .gradientEnd], startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
 
-            VStack {
-                if viewModel.isLoadingData {
-                    ProgressView("Loading")
+            if viewModel.isLoadingData {
+                ProgressView("Loading")
+            } else {
+                if viewModel.errorAtLoadingWeatherData {
+                    errorAtLoadingData()
                 } else {
-                    if viewModel.errorAtLoadingWeatherData {
-                        errorAtLoadingData()
-                    } else {
-                        weatherData()
-                    }
+                    weatherData()
                 }
             }
         }
@@ -32,14 +30,18 @@ struct CurrentWeatherView: View {
     }
 
     private func weatherData() -> some View {
-        ScrollView {
-            VStack(spacing: 50) {
-                Image(weatherIconKey())
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 250, height: 250)
+        GeometryReader { geometry in
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 20) {
+                    Image(weatherIconKey())
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 250, height: 250)
 
-                weatherInfo()
+                    weatherInfo()
+                }
+                .frame(width: geometry.size.width)
+                .frame(minHeight: geometry.size.height)
             }
         }
     }
@@ -55,7 +57,7 @@ struct CurrentWeatherView: View {
                 .font(.system(size: 20))
                 .fontWeight(.semibold)
                 .shadow(radius: 25)
-                .padding(.top, -10)
+                .padding(.top, -15)
 
             Text(viewModel.currentWeather.weather.temperatureWithIndicator())
                 .font(.system(size: 96))
